@@ -12,7 +12,7 @@ namespace AutoKolcsozesX.DataBAseService
 
         private static string connectionString;
 
-
+        //test git
 
 
 
