@@ -27,7 +27,10 @@ namespace AutoKolcsozesX.model
         public string color { get; set; }
         public double year { get; set; }
         public string vin { get; set; }
-        
+
+        public Kolcsonzes()
+        {
+        }
     }
     
   
