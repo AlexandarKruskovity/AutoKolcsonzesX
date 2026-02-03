@@ -1,8 +1,9 @@
 ﻿using MySqlConnector;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
-using System.Text;
+using System.Text; 
 using System.Threading.Tasks;
 
 namespace AutoKolcsozesX.DataBAseService
@@ -29,6 +30,20 @@ namespace AutoKolcsozesX.DataBAseService
                 Console.WriteLine(ex);
             }
         }
+        public static DataTable GetAllData(string tableName, string connectionString)
+        {
+            using var connection = new MySqlConnection(connectionString);
+            connection.Open();
 
+            using var command = new MySqlCommand($"SELECT * FROM {tableName}", connection);
+
+            using var reader = command.ExecuteReader();
+
+            var dataTable = new DataTable();
+
+            dataTable.Load(reader);
+            return dataTable;
+
+        }
     }
 }

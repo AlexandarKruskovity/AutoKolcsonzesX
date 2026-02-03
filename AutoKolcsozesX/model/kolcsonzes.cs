@@ -3,31 +3,35 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System;
+using System.Data;
+using System.Collections.Generic;
 
 namespace AutoKolcsozesX.model
 {
-    public class Kolcsonzes
+    internal class kolcsonzes
     {
-        public int id;
-        public string brand;
-        public string model;
-        public string color;
-        public int year;
-        public string vin;
-
-        public Kolcsonzes(int id, string brand, string model, string color, int year, string vin)
-        {
-            this.id = id;
-            this.brand = brand;
-            this.model = model;
-            this.color = color;
-            this.year = year;
-            this.vin = vin;
-        }
-
-        public Kolcsonzes()
-        {
-        }
+        public int id { get; set; }
+        public string brand { get; set; }
+        public string model { get; set; }
+        public string color { get; set; }
+        public double year { get; set; }
+        public string vin { get; set; }
+        
+    }
+    public kolcsonzes(int id, string brand, string model, string color, int year, string vin)
+    {
+        this.id = id;
+        this.brand = brand;
+        this.model = model;
+        this.color = color;
+        this.year = year;
+        this.vin = vin;
 
     }
+    public kolcsonzes() 
+        {
+
+        }
+   
 }

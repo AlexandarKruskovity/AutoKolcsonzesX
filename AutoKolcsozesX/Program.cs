@@ -98,19 +98,12 @@ internal class Program
         Console.WriteLine(); // új sor a végére
     }
 
-    public override bool Equals(object? obj)
-    {
-        return base.Equals(obj);
-    }
 
-    public override int GetHashCode()
+internal class Program
+{
+    private static void Main(string[] args)
     {
-        return base.GetHashCode();
-    }
-
-    public override string? ToString()
-    {
-        return base.ToString();
+        Console.WriteLine("Hello, World!");
     }
 }
 
