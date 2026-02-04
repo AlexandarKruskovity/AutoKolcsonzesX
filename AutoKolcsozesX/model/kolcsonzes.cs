@@ -9,29 +9,31 @@ using System.Collections.Generic;
 
 namespace AutoKolcsozesX.model
 {
-    internal class kolcsonzes
+
+    internal class Kolcsonzes
     {
         public int id { get; set; }
         public string brand { get; set; }
         public string model { get; set; }
         public string color { get; set; }
-        public double year { get; set; }
+        public int year { get; set; }
         public string vin { get; set; }
-        
-    }
-    public kolcsonzes(int id, string brand, string model, string color, int year, string vin)
-    {
-        this.id = id;
-        this.brand = brand;
-        this.model = model;
-        this.color = color;
-        this.year = year;
-        this.vin = vin;
 
-    }
-    public kolcsonzes() 
+        public Kolcsonzes(int id, string brand, string model, string color, int year, string vin)
         {
+            this.id = id;
+            this.brand = brand;
+            this.model = model;
+            this.color = color;
+            this.year = year;
+            this.vin = vin;
 
         }
-   
+        public Kolcsonzes() 
+        { 
+        
+        }
+    }
+
+
 }

@@ -73,7 +73,7 @@ internal class Program
                 vin = o.Field<string>("vin")
             };
 
-            kolcsonzesek.Add(kolcsonzesek);
+            kolcsonzesek.Add(kolcsonzes);
         }
     }
 
@@ -97,14 +97,7 @@ internal class Program
 
         Console.WriteLine(); // új sor a végére
     }
-
-
-internal class Program
-{
-    private static void Main(string[] args)
-    {
-        Console.WriteLine("Hello, World!");
-    }
 }
 
-// Osztály
+
+
